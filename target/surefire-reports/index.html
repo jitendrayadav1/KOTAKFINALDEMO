@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,9 +21,9 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
@@ -49,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\user\eclipse-workspace\kotakWeb\testng.xml</span>
+                    <span>D:\KOTAKDEMO\kotakWeb\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -144,7 +145,8 @@
                   <span class="method-name">TC01_ExplorePoduct</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html123] but found [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html]
 	at com.kotak.testCases.KotakHomePageTest1.TC01_ExplorePoduct(KotakHomePageTest1.java:47)
-... Removed 35 stack frames
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -168,28 +170,20 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\user\eclipse-workspace\kotakWeb\testng.xml</span>
+            <span class="header-content">D:\KOTAKDEMO\kotakWeb\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.kotak.utilities.ExtentListeners&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test name=&quot;TestonChrome&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.kotak.testCases.KotakHomePageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestonChrome --&gt;
-  &lt;test name=&quot;TestOnEdge&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
-    &lt;classes&gt;
+      &lt;class name=&quot;com.kotak.Base.TestBase&quot;/&gt;
       &lt;class name=&quot;com.kotak.testCases.KotakHomePageTest1&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestOnEdge --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -201,10 +195,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestonChrome (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">TestOnEdge (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -234,16 +225,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC01_ExplorePoduct')
 data.setCell(0, 2, 'com.kotak.testCases.KotakHomePageTest')
-data.setCell(0, 3, 48175);
+data.setCell(0, 3, 15117);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'TC01_ExplorePoduct')
 data.setCell(1, 2, 'com.kotak.testCases.KotakHomePageTest1')
-data.setCell(1, 3, 36885);
+data.setCell(1, 3, 13445);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -276,24 +267,25 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC01_ExplorePoduct</span>
-                <span class="method-start">39226 ms</span>
+                <span class="method-start">9593 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.kotak.testCases.KotakHomePageTest1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(edge)</span>
-                <span class="method-start">94150 ms</span>
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">24720 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TC01_ExplorePoduct</span>
-                <span class="method-start">156501 ms</span>
+                <span class="method-start">29488 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

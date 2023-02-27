@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="com.kotak.utilities.ExtentListeners"/>
   </listeners>
-  <test name="TestOnEdge(failed)">
+  <test thread-count="5" name="TestOnEdge(failed)" verbose="0">
     <parameter name="browser" value="edge"/>
     <classes>
       <class name="com.kotak.testCases.KotakHomePageTest1">
         <methods>
-          <include name="TC01_ExplorePoduct"/>
           <include name="setUp"/>
+          <include name="TC01_ExplorePoduct"/>
         </methods>
       </class> <!-- com.kotak.testCases.KotakHomePageTest1 -->
     </classes>
