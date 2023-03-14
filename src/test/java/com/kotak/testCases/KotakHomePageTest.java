@@ -59,8 +59,10 @@ public class KotakHomePageTest extends TestBase {
 
 		    int principal = (int)Math.round(p);
 
-			//get loan Data from excel file 
+			//get loTan Data from excel file 
 		
+//		    Thread.sleep(3000);
+		    
 			homepage.getLoanAmount().clear();
 			homepage.getLoanAmount().sendKeys(String.valueOf(p));
 			

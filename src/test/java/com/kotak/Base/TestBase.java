@@ -64,9 +64,14 @@ public class TestBase {
 		switch(browsr)
 		{
 		case "chrome": 
-			WebDriverManager.chromedriver().setup();
-			ChromeOptions options=new ChromeOptions();
-			driver=new ChromeDriver(options);
+			  ChromeOptions option = new ChromeOptions();
+	            option.addArguments("--remote-allow-origins=*");
+	            WebDriverManager.chromedriver().setup();
+	            driver = new ChromeDriver(option);
+			
+//			WebDriverManager.chromedriver().setup();
+//			ChromeOptions options=new ChromeOptions();
+//			driver=new ChromeDriver(options);
 
 			break;
 		case "firefox":
