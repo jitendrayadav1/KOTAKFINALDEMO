@@ -81,9 +81,14 @@ public class TestBase {
 
 			break;
 		case "edge":
-			WebDriverManager.edgedriver().setup();
-		    EdgeOptions eOptions=new EdgeOptions();
-			driver=new EdgeDriver(eOptions);
+			EdgeOptions eoption = new EdgeOptions();
+            eoption.addArguments("--remote-allow-origins=*");
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver(eoption);
+		
+//			WebDriverManager.edgedriver().setup();
+//		    EdgeOptions eOptions=new EdgeOptions();
+//			driver=new EdgeDriver(eOptions);
 			break;
 		default :
 			System.err.println("Invalid Browser Name : ");

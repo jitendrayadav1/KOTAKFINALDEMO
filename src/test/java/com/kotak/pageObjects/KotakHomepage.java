@@ -22,7 +22,9 @@ public class KotakHomepage {
 	}
 
 	//click on Explore Product 
-	@FindBy(xpath="//li[@class='dropdown analytics-links']") WebElement exploreProduct;
+	
+	//@FindBy(xpath="//li[@class='dropdown analytics-links']") WebElement exploreProduct;
+	@FindBy(xpath="(//li[@class='dropdown analytics-links analytics-line-break'])[1]") WebElement exploreProduct;
 
 	public WebElement getExploreProduct() {
 		return exploreProduct;
