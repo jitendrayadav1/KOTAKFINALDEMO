@@ -29,22 +29,24 @@ public class KotakHomePageTest extends TestBase {
 
 		//click on explore product 
 		Actions act=new Actions(driver);
-		act.moveToElement(homepage.getExploreProduct()).perform();
+		act.moveToElement(homepage.getMouseHoverLoan()).perform();
 
 		//click on loan 
-		homepage.getLoan().click();
+		homepage.getPersonalL().click();
 
 		//click on personal loan 
-		homepage.getPersonalLoan().click();
+		//homepage.getPersonalLoan().click();
 		Assert.assertEquals(driver.getCurrentUrl(),homepage.personalLoanUrl);
 		e.test.log(Status.INFO,"page Navigate Successfully ");
+		
+		//click on EMI calculator
 		
 		LogoIsPresent();
 		e.test.log(Status.INFO,"logo is present on personal loan page" );
 	
 		
 		FooterIsPresent();
-		//e.test.log(Status.INFO,"Footer is present on personal loan page" );
+		e.test.log(Status.INFO,"Footer is present on personal loan page" );
 	
 
 		//click on EMI Calculator 

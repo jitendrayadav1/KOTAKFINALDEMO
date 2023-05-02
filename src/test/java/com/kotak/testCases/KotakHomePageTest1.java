@@ -9,11 +9,12 @@ import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
 import com.kotak.Base.TestBase;
+import com.kotak.pageObjects.KotakHomepage;
 import com.kotak.pageObjects.KotakHomepage1;
 import com.kotak.utilities.ExtentListeners;
 import com.kotak.utilities.TestData;
-public class KotakHomePageTest1 extends TestBase {
-	TestData testdata;
+public class KotakHomePageTest1 extends TestBase {TestData testdata;
+ExtentListeners e=new ExtentListeners();
 //An_ExtentReport extentTest=new An_ExtentReport();
 	public static KotakHomepage1 homepage;
 	@Test
@@ -24,23 +25,25 @@ public class KotakHomePageTest1 extends TestBase {
 
 		//click on explore product 
 		Actions act=new Actions(driver);
-		act.moveToElement(homepage.getExploreProduct()).perform();
+		act.moveToElement(homepage.getMouseHoverLoan()).perform();
 
 		//click on loan 
-		homepage.getLoan().click();
+		homepage.getPersonalL().click();
 
 		//click on personal loan 
-		homepage.getPersonalLoan().click();
+		//homepage.getPersonalLoan().click();
 		Assert.assertEquals(driver.getCurrentUrl(),homepage.personalLoanUrl);
-		//ExtentListeners.test.log(Status.INFO,"page Navigate Successfully " );
+		e.test.log(Status.INFO,"page Navigate Successfully ");
+		
+		//click on EMI calculator
 		
 		LogoIsPresent();
-		//ExtentListeners.test.log(Status.INFO,"logo is present on personal loan page" );
+		e.test.log(Status.INFO,"logo is present on personal loan page" );
 	
 		
 		FooterIsPresent();
-		//ExtentListeners.test.log(Status.INFO,"Footer is present on personal loan page" );
-		
+		e.test.log(Status.INFO,"Footer is present on personal loan page" );
+	
 
 		//click on EMI Calculator 
 		homepage.getEMICalculator().click();
@@ -54,8 +57,10 @@ public class KotakHomePageTest1 extends TestBase {
 
 		    int principal = (int)Math.round(p);
 
-			//get loan Data from excel file 
+			//get loTan Data from excel file 
 		
+//		    Thread.sleep(3000);
+		    
 			homepage.getLoanAmount().clear();
 			homepage.getLoanAmount().sendKeys(String.valueOf(p));
 			
@@ -73,7 +78,7 @@ public class KotakHomePageTest1 extends TestBase {
 			double emiAmount=emi_calculator(principal,r,y1);
 			int value2 = (int)Math.round(emiAmount);
 			Assert.assertEquals(value1,value2,"Assertion on EMI amount not is successfull ");
-			//ExtentListeners.test.log(Status.INFO,"Assertion on EMI amount is successfull" );
+			e.test.log(Status.INFO,"Assertion on EMI amount is successfull" );
 
 			//for Principal assertion 
 			String princ=homepage.getPrincipal_amt().getText();
@@ -83,7 +88,7 @@ public class KotakHomePageTest1 extends TestBase {
 			int P_Amount=(int)Math.round(p);
 
 			Assert.assertEquals(PrincipalAmount,P_Amount,"Assertion on Principal amount is not successfull");
-			//ExtentListeners.test.log(Status.INFO,"Assertion on Principal amount is successfull" );
+			e.test.log(Status.INFO,"Assertion on Principal amount is successfull" );
 
 			//for interest payable 
 			String inter_pay=homepage.getInterest_payable().getText();
@@ -95,7 +100,7 @@ public class KotakHomePageTest1 extends TestBase {
 			String total=homepage.getTotal_payment().getText();
 			String totalAmt=total.replaceAll(",","");
 			Assert.assertEquals(Integer.parseInt(totalAmt),totalamount);
-			//ExtentListeners.test.log(Status.INFO,"assertion on total amount is successfull");
+			e.test.log(Status.INFO,"assertion on total amount is successfull");
 		
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -103,15 +108,14 @@ public class KotakHomePageTest1 extends TestBase {
 
 		//logo is present 
 		LogoIsPresent();
-		//ExtentListeners.test.log(Status.INFO,"logo is present on EMI page " );
+		e.test.log(Status.INFO,"logo is present on EMI page " );
 				
 		//footer display 
 		FooterIsPresent();
-		//ExtentListeners.test.log(Status.INFO," footer is present on EMI page " );
+		e.test.log(Status.INFO," footer is present on EMI page " );
 		
 
 	}
-
 //	@Test
 //	public void BrokenLinks() throws InterruptedException, IOException
 //	{

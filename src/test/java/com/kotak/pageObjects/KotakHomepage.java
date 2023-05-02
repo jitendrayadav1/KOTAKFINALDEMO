@@ -30,6 +30,22 @@ public class KotakHomepage {
 		return exploreProduct;
 	}
 
+	//mouse Hoverin on Loan
+	@FindBy(xpath="(//li[@class='dropdown analytics-links analytics-line-break'])[4]") WebElement mouseHoverLoan;
+	
+	
+	public WebElement getMouseHoverLoan() {
+		return mouseHoverLoan;
+	}
+	
+	//click on personal loan
+	@FindBy(xpath="//ul[@class='tabs-list drop-tabs-list-4']//li[2]//a") WebElement personalL;
+	
+
+	public WebElement getPersonalL() {
+		return personalL;
+	}
+
 	//click on loan
 	@FindBy(xpath="//ul[@class='tabs-list drop-tabs-list']//li[4]")WebElement loan;
 	public WebElement getLoan() {
@@ -43,7 +59,7 @@ public class KotakHomepage {
 	}
 
 	//click on EMI Calculator tab 
-	@FindBy(xpath="//a[@data-id='calculator1520598575344']") WebElement EMICalculator;
+	@FindBy(xpath="//ul[@class='sticky-tabs-ul tab-track']/li[2]") WebElement EMICalculator;
 
 	public WebElement getEMICalculator() {
 		return EMICalculator;
