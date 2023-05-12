@@ -44,9 +44,11 @@ ExtentListeners e=new ExtentListeners();
 		FooterIsPresent();
 		e.test.log(Status.INFO,"Footer is present on personal loan page" );
 	
-
+         Thread.sleep(2100);
 		//click on EMI Calculator 
 		homepage.getEMICalculator().click();
+		
+		
 		Assert.assertEquals(driver.getCurrentUrl(),homepage.EMIUrl);
 		
 		try {

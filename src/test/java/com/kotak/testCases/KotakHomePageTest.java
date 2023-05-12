@@ -29,6 +29,7 @@ public class KotakHomePageTest extends TestBase {
 
 		//click on explore product 
 		Actions act=new Actions(driver);
+		Thread.sleep(2300);
 		act.moveToElement(homepage.getMouseHoverLoan()).perform();
 
 		//click on loan 
@@ -48,7 +49,7 @@ public class KotakHomePageTest extends TestBase {
 		FooterIsPresent();
 		e.test.log(Status.INFO,"Footer is present on personal loan page" );
 	
-
+         Thread.sleep(2000);
 		//click on EMI Calculator 
 		homepage.getEMICalculator().click();
 		Assert.assertEquals(driver.getCurrentUrl(),homepage.EMIUrl);
@@ -60,13 +61,18 @@ public class KotakHomePageTest extends TestBase {
 			double y1=testdata.year;
 
 		    int principal = (int)Math.round(p);
+		    System.out.println(String.valueOf(p));
+		    
 
 			//get loTan Data from excel file 
 		
-//		    Thread.sleep(3000);
 		    
+		  //  homepage.getLoanAmount().click();
 			homepage.getLoanAmount().clear();
+			
+			
 			homepage.getLoanAmount().sendKeys(String.valueOf(p));
+			
 			
 			homepage.getInterest_rate().clear();
 			homepage.getInterest_rate().sendKeys(String.valueOf(r));
