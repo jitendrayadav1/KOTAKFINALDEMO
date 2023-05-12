@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-12T12:17:06 IST" name="Suite" finished-at="2023-05-12T12:17:58 IST" duration-ms="51713">
+  <suite started-at="2023-05-12T14:52:33 IST" name="Suite" finished-at="2023-05-12T14:53:18 IST" duration-ms="44571">
     <groups>
     </groups>
-    <test started-at="2023-05-12T12:17:06 IST" name="TestonChrome" finished-at="2023-05-12T12:17:35 IST" duration-ms="28861">
+    <test started-at="2023-05-12T14:52:33 IST" name="TestonChrome" finished-at="2023-05-12T14:52:55 IST" duration-ms="21468">
       <class name="com.kotak.testCases.KotakHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.kotak.testCases.KotakHomePageTest@d2de489]" started-at="2023-05-12T12:17:06 IST" name="setUp" finished-at="2023-05-12T12:17:14 IST" duration-ms="7633" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.kotak.testCases.KotakHomePageTest@14bdbc74]" started-at="2023-05-12T14:52:33 IST" name="setUp" finished-at="2023-05-12T14:52:40 IST" duration-ms="6286" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC01_ExplorePoduct()[pri:0, instance:com.kotak.testCases.KotakHomePageTest@d2de489]" started-at="2023-05-12T12:17:14 IST" name="TC01_ExplorePoduct" finished-at="2023-05-12T12:17:35 IST" duration-ms="21117" status="PASS">
+        <test-method signature="TC01_ExplorePoduct()[pri:0, instance:com.kotak.testCases.KotakHomePageTest@14bdbc74]" started-at="2023-05-12T14:52:40 IST" name="TC01_ExplorePoduct" finished-at="2023-05-12T14:52:55 IST" duration-ms="15084" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_ExplorePoduct -->
       </class> <!-- com.kotak.testCases.KotakHomePageTest -->
     </test> <!-- TestonChrome -->
-    <test started-at="2023-05-12T12:17:36 IST" name="TestOnEdge" finished-at="2023-05-12T12:17:58 IST" duration-ms="21975">
+    <test started-at="2023-05-12T14:52:56 IST" name="TestOnEdge" finished-at="2023-05-12T14:53:18 IST" duration-ms="22268">
       <class name="com.kotak.testCases.KotakHomePageTest1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.kotak.testCases.KotakHomePageTest1@7068e664]" started-at="2023-05-12T12:17:36 IST" name="setUp" finished-at="2023-05-12T12:17:44 IST" duration-ms="8236" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.kotak.testCases.KotakHomePageTest1@60db1c0e]" started-at="2023-05-12T14:52:56 IST" name="setUp" finished-at="2023-05-12T14:53:06 IST" duration-ms="10075" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC01_ExplorePoduct()[pri:0, instance:com.kotak.testCases.KotakHomePageTest1@7068e664]" started-at="2023-05-12T12:17:44 IST" name="TC01_ExplorePoduct" finished-at="2023-05-12T12:17:57 IST" duration-ms="13335" status="FAIL">
+        <test-method signature="TC01_ExplorePoduct()[pri:0, instance:com.kotak.testCases.KotakHomePageTest1@60db1c0e]" started-at="2023-05-12T14:53:06 IST" name="TC01_ExplorePoduct" finished-at="2023-05-12T14:53:17 IST" duration-ms="11571" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html123] but found [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html]]]>

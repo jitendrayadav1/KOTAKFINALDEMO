@@ -1,0 +1,9 @@
+com\kotak\utilities\TestData.class
+com\kotak\utilities\ExtentManager.class
+com\kotak\testCases\KotakHomePageTest.class
+com\kotak\utilities\ReadConfig.class
+com\kotak\Base\TestBase.class
+com\kotak\pageObjects\KotakHomepage1.class
+com\kotak\testCases\KotakHomePageTest1.class
+com\kotak\pageObjects\KotakHomepage.class
+com\kotak\utilities\ExtentListeners.class

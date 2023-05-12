@@ -1,17 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 52.424 s <<< FAILURE! - in TestSuite
-TC01_ExplorePoduct(com.kotak.testCases.KotakHomePageTest1)  Time elapsed: 17.764 s  <<< FAILURE!
-org.openqa.selenium.ElementNotInteractableException: 
-element not interactable
-  (Session info: MicrosoftEdge=112.0.1722.34)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [8712994dfa597dba33144ce9137788fe, clickElement {id=3a29f6f2-6ad2-4368-a5f5-393e3bd8e3b2}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.34, ms:edgeOptions: {debuggerAddress: localhost:64151}, msedge: {msedgedriverVersion: 112.0.1722.34 (649b7446f96f..., userDataDir: C:\Users\RESHMA\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 112.0.1722.34, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (8712994dfa597dba33144ce9137788fe)] -> xpath: //ul[@class='tabs-list drop-tabs-list']//li[4]]
-Session ID: 8712994dfa597dba33144ce9137788fe
-	at com.kotak.testCases.KotakHomePageTest1.TC01_ExplorePoduct(KotakHomePageTest1.java:30)
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 44.157 s <<< FAILURE! - in TestSuite
+TC01_ExplorePoduct(com.kotak.testCases.KotakHomePageTest1)  Time elapsed: 13.095 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html123] but found [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html]
+	at com.kotak.testCases.KotakHomePageTest1.TC01_ExplorePoduct(KotakHomePageTest1.java:52)
 

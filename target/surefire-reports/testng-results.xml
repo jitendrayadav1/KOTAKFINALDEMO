@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-10T11:25:15 IST" name="Suite" finished-at="2023-04-10T11:26:04 IST" duration-ms="49600">
+  <suite started-at="2023-05-12T15:17:55 IST" name="Suite" finished-at="2023-05-12T15:18:37 IST" duration-ms="42068">
     <groups>
     </groups>
-    <test started-at="2023-04-10T11:25:15 IST" name="TestonChrome" finished-at="2023-04-10T11:25:39 IST" duration-ms="23948">
+    <test started-at="2023-05-12T15:17:55 IST" name="TestonChrome" finished-at="2023-05-12T15:18:16 IST" duration-ms="21046">
       <class name="com.kotak.testCases.KotakHomePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.kotak.testCases.KotakHomePageTest@1984b1f]" started-at="2023-04-10T11:25:15 IST" name="setUp" finished-at="2023-04-10T11:25:22 IST" duration-ms="6876" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.kotak.testCases.KotakHomePageTest@5b218417]" started-at="2023-05-12T15:17:55 IST" name="setUp" finished-at="2023-05-12T15:18:01 IST" duration-ms="5767" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC01_ExplorePoduct()[pri:0, instance:com.kotak.testCases.KotakHomePageTest@1984b1f]" started-at="2023-04-10T11:25:22 IST" name="TC01_ExplorePoduct" finished-at="2023-04-10T11:25:39 IST" duration-ms="16992" status="PASS">
+        <test-method signature="TC01_ExplorePoduct()[pri:0, instance:com.kotak.testCases.KotakHomePageTest@5b218417]" started-at="2023-05-12T15:18:01 IST" name="TC01_ExplorePoduct" finished-at="2023-05-12T15:18:16 IST" duration-ms="15197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_ExplorePoduct -->
       </class> <!-- com.kotak.testCases.KotakHomePageTest -->
     </test> <!-- TestonChrome -->
-    <test started-at="2023-04-10T11:25:40 IST" name="TestOnEdge" finished-at="2023-04-10T11:26:04 IST" duration-ms="24569">
+    <test started-at="2023-05-12T15:18:17 IST" name="TestOnEdge" finished-at="2023-05-12T15:18:37 IST" duration-ms="20213">
       <class name="com.kotak.testCases.KotakHomePageTest1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.kotak.testCases.KotakHomePageTest1@60129b9a]" started-at="2023-04-10T11:25:40 IST" name="setUp" finished-at="2023-04-10T11:25:45 IST" duration-ms="5426" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.kotak.testCases.KotakHomePageTest1@359df09a]" started-at="2023-05-12T15:18:17 IST" name="setUp" finished-at="2023-05-12T15:18:23 IST" duration-ms="6341" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,50 +37,20 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC01_ExplorePoduct()[pri:0, instance:com.kotak.testCases.KotakHomePageTest1@60129b9a]" started-at="2023-04-10T11:25:45 IST" name="TC01_ExplorePoduct" finished-at="2023-04-10T11:26:03 IST" duration-ms="17733" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="TC01_ExplorePoduct()[pri:0, instance:com.kotak.testCases.KotakHomePageTest1@359df09a]" started-at="2023-05-12T15:18:23 IST" name="TC01_ExplorePoduct" finished-at="2023-05-12T15:18:36 IST" duration-ms="13079" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[element not interactable
-  (Session info: MicrosoftEdge=112.0.1722.34)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [8712994dfa597dba33144ce9137788fe, clickElement {id=3a29f6f2-6ad2-4368-a5f5-393e3bd8e3b2}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.34, ms:edgeOptions: {debuggerAddress: localhost:64151}, msedge: {msedgedriverVersion: 112.0.1722.34 (649b7446f96f..., userDataDir: C:\Users\RESHMA\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 112.0.1722.34, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (8712994dfa597dba33144ce9137788fe)] -> xpath: //ul[@class='tabs-list drop-tabs-list']//li[4]]
-Session ID: 8712994dfa597dba33144ce9137788fe]]>
+              <![CDATA[expected [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html123] but found [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=112.0.1722.34)
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [8712994dfa597dba33144ce9137788fe, clickElement {id=3a29f6f2-6ad2-4368-a5f5-393e3bd8e3b2}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.34, ms:edgeOptions: {debuggerAddress: localhost:64151}, msedge: {msedgedriverVersion: 112.0.1722.34 (649b7446f96f..., userDataDir: C:\Users\RESHMA\AppData\Loc...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64151/devtoo..., se:cdpVersion: 112.0.1722.34, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (8712994dfa597dba33144ce9137788fe)] -> xpath: //ul[@class='tabs-list drop-tabs-list']//li[4]]
-Session ID: 8712994dfa597dba33144ce9137788fe
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at com.kotak.testCases.KotakHomePageTest1.TC01_ExplorePoduct(KotakHomePageTest1.java:30)
+              <![CDATA[java.lang.AssertionError: expected [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html123] but found [https://www.kotak.com/en/personal-banking/loans/personal-loan/personal-loan-emi-calculator.html]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.kotak.testCases.KotakHomePageTest1.TC01_ExplorePoduct(KotakHomePageTest1.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -115,7 +85,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC01_ExplorePoduct -->
